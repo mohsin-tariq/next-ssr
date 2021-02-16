@@ -1,0 +1,11 @@
+p {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+p.bold {
+  font-weight: bold;
+}
+p.title {
+  color: blue;
+}
