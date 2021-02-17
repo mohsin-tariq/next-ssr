@@ -2,113 +2,222 @@
 
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="jsx-1276654382 container"
-  >
-    <main
-      class="jsx-1276654382"
-    >
+  <div>
+    <main>
       <h1
-        class="jsx-1276654382 title"
+        class="title"
       >
-        Welcome to 
-        <a
-          class="jsx-1276654382"
-          href="https://nextjs.org"
-        >
-          Next.js!
-        </a>
+        SpaceX Launch Program
       </h1>
-      <p
-        class="jsx-1276654382 description"
-      >
-        Get started by editing 
-        <code
-          class="jsx-1276654382"
-        >
-          pages/index.tsx
-        </code>
-      </p>
-      <button
-        class="jsx-1276654382"
-      >
-        Test Button
-      </button>
       <div
-        class="jsx-1276654382 grid"
+        class="container"
       >
-        <a
-          class="jsx-1276654382 card"
-          href="https://nextjs.org/docs"
+        <div
+          class="left-panel"
         >
           <h3
-            class="jsx-1276654382"
+            class="heading3"
           >
-            Documentation →
+             Filter
           </h3>
-          <p
-            class="jsx-1276654382"
+          <div
+            class="left-panel-item"
           >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-        <a
-          class="jsx-1276654382 card"
-          href="https://nextjs.org/learn"
+            <div
+              class="title-divider"
+            >
+              <p
+                class=""
+              >
+                 Launch Year
+              </p>
+            </div>
+            <div
+              class="button-container"
+            >
+              <button
+                class="button"
+                type="button"
+              >
+                 2005
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 2006
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 2007
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 2008
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 2009
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 2010
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 2011
+              </button>
+            </div>
+          </div>
+          <div
+            class="left-panel-item"
+          >
+            <div
+              class="title-divider"
+            >
+              <p
+                class=""
+              >
+                 Successful Launch
+              </p>
+            </div>
+            <div
+              class="button-container"
+            >
+              <button
+                class="button"
+                type="button"
+              >
+                 True
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 false
+              </button>
+            </div>
+          </div>
+          <div
+            class="left-panel-item"
+          >
+            <div
+              class="title-divider"
+            >
+              <p
+                class=""
+              >
+                 Successful Landing
+              </p>
+            </div>
+            <div
+              class="button-container"
+            >
+              <button
+                class="button"
+                type="button"
+              >
+                 True
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                 false
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex"
         >
-          <h3
-            class="jsx-1276654382"
+          <div
+            class="card-list"
           >
-            Learn →
-          </h3>
-          <p
-            class="jsx-1276654382"
-          >
-            Learn about Next.js in an interactive course with quizzes!
-          </p>
-        </a>
-        <a
-          class="jsx-1276654382 card"
-          href="https://github.com/vercel/next.js/tree/master/examples"
-        >
-          <h3
-            class="jsx-1276654382"
-          >
-            Examples →
-          </h3>
-          <p
-            class="jsx-1276654382"
-          >
-            Discover and deploy boilerplate example Next.js projects.
-          </p>
-        </a>
-        <a
-          class="jsx-1276654382 card"
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        >
-          <h3
-            class="jsx-1276654382"
-          >
-            Deploy →
-          </h3>
-          <p
-            class="jsx-1276654382"
-          >
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
+            <div
+              class="card"
+            >
+              <div
+                class="image-container"
+              >
+                <img
+                  alt="FalconSat"
+                  src="https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
+                />
+              </div>
+              <div
+                class="card-container"
+              >
+                <p
+                  class="title bold"
+                >
+                   FalconSat #1
+                </p>
+                <p
+                  class="bold"
+                >
+                   Mission Ids 
+                </p>
+                <ul />
+                <p
+                  class=""
+                >
+                   
+                  <span
+                    class="bold"
+                  >
+                    Launch Year:
+                  </span>
+                  2006
+                </p>
+                <p
+                  class=""
+                >
+                   
+                  <span
+                    class="bold"
+                  >
+                    Successful Launch:
+                  </span>
+                  false
+                </p>
+                <p
+                  class=""
+                >
+                   
+                  <span
+                    class="bold"
+                  >
+                    Successful landing:
+                  </span>
+                  false
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer
-      class="jsx-1276654382"
-    >
-      <a
-        class="jsx-1276654382"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Powered by 
+    <footer>
+      <span>
+        Developed By:
+        <a
+          href="https://www.linkedin.com/in/mohsin-tariq--reactjs/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Mohsin Tariq
+        </a>
         <div
           style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
         >
@@ -130,7 +239,7 @@ exports[`Home page matches snapshot 1`] = `
             style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
           />
         </div>
-      </a>
+      </span>
     </footer>
   </div>
 </DocumentFragment>
