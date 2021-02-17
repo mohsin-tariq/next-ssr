@@ -6,7 +6,7 @@ interface Props {
 
 const TitleDivider = ({ text }: Props): JSX.Element => (
   <div className="title-divider">
-    <Paragraph text={text} />
+    <Paragraph>{text}</Paragraph>
   </div>
 )
 export default TitleDivider;

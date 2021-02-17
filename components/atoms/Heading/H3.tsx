@@ -1,7 +1,7 @@
 interface H3Props {
-  text: string
+  children: React.ReactNode
 }
 
-const H3 = ({ text }: H3Props): JSX.Element => <h3 className="heading3"> {text}</h3>;
+const H3 = ({ children }: H3Props): JSX.Element => <h3 className="heading3"> {children}</h3>;
 
 export default H3;

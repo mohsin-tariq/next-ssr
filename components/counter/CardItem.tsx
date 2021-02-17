@@ -1,6 +1,4 @@
 // import { useSelector, useDispatch } from 'react-redux'
-import { actionTypes } from '../../features/counter'
-
 export interface CardItemProps {
   flight_number: number
   mission_name: string

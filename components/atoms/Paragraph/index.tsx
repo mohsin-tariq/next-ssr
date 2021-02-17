@@ -1,9 +1,10 @@
 interface ParagraphProps {
-  text: string,
-  className?: string
+  className?: string,
+  children: React.ReactNode
 }
 
-const Paragraph = ({ text, className }: ParagraphProps): JSX.Element => <p className={className}> {text}</p>;
+
+const Paragraph = (props : ParagraphProps): JSX.Element => <p className={props.className}> {props.children}</p>;
 
 Paragraph.defaultProps = {
   className: ''

@@ -7,7 +7,7 @@ interface Props {
 const ButtonList = ({ itemList }: Props): JSX.Element => (
   <div className="button-container">
     {
-      itemList.map((item) => <Button key={item} text={item} />)
+      itemList.map((item) => <Button key={item} className="button">{item}</Button>)
     }
   </div>
 )

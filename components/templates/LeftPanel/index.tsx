@@ -7,7 +7,7 @@ interface Props {
 
 const LeftPanel = ({ panelData }: Props): JSX.Element => (
   <div className="left-panel">
-    <H3 text="Filter"/>
+    <H3>Filter</H3>
     {
       panelData.map(({ heading, buttonList}) => <LeftPanelItem key={heading} heading={heading} buttonList={buttonList} />)
     }

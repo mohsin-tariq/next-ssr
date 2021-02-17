@@ -1,7 +1,7 @@
 interface H1Props {
-  text: string
+  children: React.ReactNode
 }
 
-const H1 = ({ text }: H1Props): JSX.Element => <h1> {text}</h1>;
+const H1 = ({ children }: H1Props): JSX.Element => <h1> {children}</h1>;
 
 export default H1;

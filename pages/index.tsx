@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { GetServerSideProps, InferGetServerSidePropsType  } from 'next'
 
-import CardItem from '../components/counter/CardItem';
+import CardList from '../components/templates/CardList';
 import LeftPanel from '../components/templates/LeftPanel';
 
 export const getServerSideProps: GetServerSideProps = async () => {
@@ -38,23 +38,8 @@ export const Home = ({ data }: InferGetServerSidePropsType<typeof getServerSideP
             buttonList: ['True', 'false']
           }
         ]} />
-        <div>
-            <ul>
-          {
-            data.map(({flight_number,
-              mission_name,
-              mission_id,
-              launch_year,
-              launch_success}) => <CardItem key={flight_number} flight_number={flight_number}
-                  mission_name={mission_name}
-                  mission_id={mission_id}
-                  launch_year={launch_year}
-                  launch_success={launch_success}/>)
-          }
-          </ul>
-        </div>
+         <CardList cardList={data} />
       </div>
-      
     </main>
 
     <footer>

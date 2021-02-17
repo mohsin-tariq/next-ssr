@@ -1,7 +1,10 @@
 interface ButtonProps {
-  text: string
+  className?: string,
+  children: React.ReactNode
 }
 
-const Button = ({ text }: ButtonProps): JSX.Element => <button className="button" type='button'> {text}</button>;
-
+const Button = ({ className, children }: ButtonProps): JSX.Element => <button className={className} type='button'> {children}</button>;
+Button.defaultProps = {
+  className: 'button'
+}
 export default Button;
