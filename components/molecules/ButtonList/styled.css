@@ -1,0 +1,15 @@
+
+.item {
+  width: 100%
+}
+
+.button-container {
+  display: grid;
+  margin-top: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button-container>button {
+  flex: 0 40%;
+}

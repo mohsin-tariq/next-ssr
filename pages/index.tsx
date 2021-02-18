@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { GetServerSideProps, InferGetServerSidePropsType  } from 'next'
 
-import Counter from '../components/counter/Counter';
+import HomePageTemplate from '../components/templates/HomePageTemplate';
+import Footer from '../components/templates/Footer';
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const res = await fetch(`https://api.spacexdata.com/v3/launches?limit=100`)
   const data = await res.json()
 
@@ -13,32 +13,17 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 }
 
 
-export const Home = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>): JSX.Element => (
-  <div className="container">
+const Home = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>): JSX.Element => (
+  <div>
     <Head>
       <title>SpaceX</title>
     </Head>
     <main>
-      <h1 className="title">
-        SpaceX Launch Program
-        {JSON.stringify(data)}
-      </h1>
-
-      <Counter/>
-
+      <HomePageTemplate data={data} />
     </main>
 
     <footer>
-      <span>
-        Developed By:
-        <a
-          href="https://www.linkedin.com/in/mohsin-tariq--reactjs/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Mohsin Tariq
-        </a>
-      </span>
+      <Footer />
     </footer>
   </div>
 )

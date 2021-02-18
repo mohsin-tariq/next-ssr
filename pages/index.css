@@ -1,0 +1,34 @@
+@import "../components//atoms/Button//styled.css";
+@import "../components/atoms/Heading/style.css";
+@import "../components/atoms/Paragraph/styled.css";
+@import "../components/atoms/CardItem/style.css";
+
+
+@import "../components/molecules/ButtonList/styled.css";
+@import "../components/molecules/TitleDivider/style.css";
+
+@import "../components/organisms/LeftPanelItem/style.css";
+
+@import "../components/templates/LeftPanel/style.css";
+@import "../components/templates/CardList/style.css";
+
+
+body {
+  background-color: lightgrey;
+  padding: 1rem;
+  max-width: 1440px; 
+	float: none !important; 
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: 0 auto !important; 
+  }
+}

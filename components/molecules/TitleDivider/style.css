@@ -1,0 +1,8 @@
+.title-divider {
+  text-align: center;
+  padding-bottom: 0;
+  padding: 0 10%;
+}
+.title-divider>p {
+  border-bottom: 1px solid black;
+}
