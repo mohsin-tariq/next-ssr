@@ -64,12 +64,12 @@ To begin with I assume you have NodeJS installed in your machine.
 ## Scripts
 Below are the scripts that can be useful to run application post installation
 
-#### To run applicaton on Development server
+### To run applicaton on Development server
  ```sh
    npm run dev
    ```
 
-#### To Create a build and start build on local
+### To Create a build and start build on local
  ```sh
    npm run build
    ```
@@ -77,20 +77,20 @@ Below are the scripts that can be useful to run application post installation
    npm start
    ```
  
-#### To run unit test
+### To run unit test
  ```sh
    npm run test
    ```
 
-#### To run unit test and update snapshot
+### To run unit test and update snapshot
  ```sh
    npm run test -- -u
    ```
-#### To run unit test coverage report
+### To run unit test coverage report
  ```sh
    npm run test:coverage
    ```
-#### To run unit test coverage report and update snapshot
+### To run unit test coverage report and update snapshot
  ```sh
    npm run test:coverage -- -u
    ```
@@ -99,18 +99,18 @@ of all the files. And once you run above command you will also see a coverage su
 Below is the one generated from above command:
 ![image](https://user-images.githubusercontent.com/7425342/108430002-9ba5c700-7238-11eb-8d88-8bc97694080f.png)
       
-#### Lint Check
+### Lint Check
  ```sh
    npm run lint
    ```
-#### Type Check
+### Type Check
  ```sh
    npm run type-check
    ```
-#### Run all (lint, type-check and test)
+### Run all (lint, type-check and test)
  ```sh
    npm run test-all
    ```
 
-### Lighthouse Performance Report Screenshot
+## Lighthouse Performance Report Screenshot
 ![image](https://user-images.githubusercontent.com/7425342/108430880-fa1f7500-7239-11eb-9479-3b5c05e86d92.png)
