@@ -3,3 +3,9 @@
   background-color: white;
   flex: 1;
 }
+
+@media (min-width: 700px) {
+  .left-panel {
+    max-width: 220px;
+  }
+}

@@ -4,8 +4,10 @@
 }
 
 .button-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  margin-top: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .button-container>button {

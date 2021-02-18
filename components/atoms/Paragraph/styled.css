@@ -1,6 +1,7 @@
 p {
   font-size: 18px;
   font-weight: normal;
+  margin: 0
 }
 
 p.bold {
@@ -8,4 +9,5 @@ p.bold {
 }
 p.title {
   color: blue;
+  margin: 18px 0;
 }

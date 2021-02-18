@@ -17,12 +17,25 @@
 
 .image-container {
   background: lightgray; 
+  text-align: center;
 }
 
-
-
-@media (min-width: 700px) {
+@media (min-width: 700) {
   .card {
     margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    margin: 0;
+    width: 192px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    margin: 0;
+    width: 256px;
   }
 }

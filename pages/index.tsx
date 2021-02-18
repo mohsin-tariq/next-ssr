@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }
 
 
-export const Home = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>): JSX.Element => (
+const Home = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>): JSX.Element => (
   <div>
     <Head>
       <title>SpaceX</title>

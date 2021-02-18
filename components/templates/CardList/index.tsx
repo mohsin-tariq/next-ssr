@@ -13,14 +13,15 @@ const ListItem = ({ cardList }: Props): JSX.Element => (
           mission_id,
           launch_year,
           launch_success,
-          links
+          links,
+          rocket
         }) => <CardItem key={flight_number} flightNumber={flight_number}
               missionName={mission_name}
               missionIds={mission_id}
               launchYear={launch_year}
               successfulLaunch={launch_success}
               imageUrl={links.mission_patch_small}
-              successfullLanding={false}
+              successfullLanding={rocket.first_stage.cores[0].land_success || 'false'}
               />)
       }
     </div>

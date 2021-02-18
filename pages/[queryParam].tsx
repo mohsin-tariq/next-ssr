@@ -3,34 +3,23 @@ import useSWR from 'swr'
 import Head from 'next/head'
 import HomePageTemplate from '../components/templates/HomePageTemplate';
 import Footer from '../components/templates/Footer';
+import getQueryParam from '../features/filter/util';
 
 export const FilteredResult = (): JSX.Element => {
   const router = useRouter()
   const { land_success, launch_success, launch_year } = router.query 
   let url =  `https://api.spacexdata.com/v3/launches?limit=100`
-  let queryParam = '';
-  if (launch_success) {
-    queryParam = queryParam.concat('&launch_success=', launch_success.toString());
-  }
-  if (land_success) {
-    queryParam = queryParam.concat('&land_success=', land_success.toString());
-  }
-  if (launch_year) {
-    queryParam = queryParam.concat('&launch_year=', launch_year.toString());
-  }
-  url = url.concat(queryParam)
-  const fetcher = url => fetch(url).then(res => res.json());
-  const {data, error} = useSWR(url, fetcher)
-  if (error) return <div>Request failed</div>
-  if (!data) return <div>Fetching data, please wait...</div>
   
+  url = url.concat(getQueryParam(land_success, launch_success, launch_year))
+  const fetcher = url => fetch(url).then(res => res.json());
+  const {data, error} = useSWR(url, fetcher)  
   return (
     <div>
       <Head>
         <title>SpaceX</title>
       </Head>
       <main>
-        <HomePageTemplate data={data} />
+        <HomePageTemplate data={data}/>
       </main>
 
       <footer>
