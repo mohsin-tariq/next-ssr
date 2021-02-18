@@ -22,8 +22,8 @@ const CardItem = ({ flightNumber, missionName, imageUrl, missionIds, launchYear,
       <Para className="bold">Mission Ids </Para> 
       <List listItem={missionIds} /> 
       <Para><span className="bold">Launch Year:</span>{launchYear}</Para>
-      <Para><span className="bold">Successful Launch:</span>{successfulLaunch.toString()}</Para>
-      <Para><span className="bold">Successful landing:</span>{successfullLanding.toString()}</Para>
+      <Para><span className="bold">Successful Launch:</span>{successfulLaunch && successfulLaunch.toString()}</Para>
+      <Para><span className="bold">Successful landing:</span>{successfullLanding && successfullLanding.toString()}</Para>
     </div>
   </div>
 )

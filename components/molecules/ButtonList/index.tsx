@@ -1,14 +1,15 @@
 import Button from '../../atoms/Button';
 
-interface Props {
-  itemList: string[]
+export interface Props {
+  itemList: string[],
+  queryParam: string
 }
 
-const ButtonList = ({ itemList }: Props): JSX.Element => (
+const ButtonList = ({ itemList, queryParam }: Props): JSX.Element => (
   <div className="button-container">
     {
-      itemList.map((item) => <Button key={item} className="button">{item}</Button>)
+      itemList.map((item) => <Button key={item} text={item} queryParam={queryParam} />)
     }
   </div>
 )
-export default ButtonList;
+export default ButtonList

@@ -8,7 +8,7 @@ const ListItem = ({ cardList }: Props): JSX.Element => (
   <div className="d-flex">
     <div className="card-list">
       {
-        cardList.map(({flight_number,
+        cardList && cardList.map(({flight_number,
           mission_name,
           mission_id,
           launch_year,
