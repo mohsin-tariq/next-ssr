@@ -1,9 +1,6 @@
-# NextJS Typescript Boilerplate
-
-
 <br />
 <p align="center">
-  <h3 align="center">NextJS - Server Side Rendering</h3>
+  <h1 align="center">NextJS - Server Side Rendering using TypeScript</h3>
 
   <p align="center">
     SpaceX! An application build in NextJS using ReactJS, TypeScript along with Redux
