@@ -4,11 +4,12 @@ exports[`Page render snapshots Renders page with values" 1`] = `
 <DocumentFragment>
   <div>
     <main>
-      <h1
-        class="title"
+      <a
+        class="heading1"
+        href="/"
       >
-        SpaceX Launch Program
-      </h1>
+         SpaceX Launch Program
+      </a>
       <div
         class="container"
       >
@@ -292,11 +293,12 @@ exports[`Page render snapshots Renders page without missionId without Image" 1`]
 <DocumentFragment>
   <div>
     <main>
-      <h1
-        class="title"
+      <a
+        class="heading1"
+        href="/"
       >
-        SpaceX Launch Program
-      </h1>
+         SpaceX Launch Program
+      </a>
       <div
         class="container"
       >
@@ -572,198 +574,7 @@ exports[`Page render snapshots Renders page without missionId without Image" 1`]
 exports[`Page render snapshots Renders page without values" 1`] = `
 <DocumentFragment>
   <div>
-    <main>
-      <h1
-        class="title"
-      >
-        SpaceX Launch Program
-      </h1>
-      <div
-        class="container"
-      >
-        <div
-          class="left-panel"
-        >
-          <h3
-            class="heading3"
-          >
-             Filter
-          </h3>
-          <div
-            class="left-panel-item"
-          >
-            <div
-              class="title-divider"
-            >
-              <p
-                class=""
-              >
-                 Launch Year
-              </p>
-            </div>
-            <div
-              class="button-container"
-            >
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2006"
-              >
-                2006
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2007"
-              >
-                2007
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2008"
-              >
-                2008
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2009"
-              >
-                2009
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2010"
-              >
-                2010
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2011"
-              >
-                2011
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2012"
-              >
-                2012
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2013"
-              >
-                2013
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2014"
-              >
-                2014
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2015"
-              >
-                2015
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2016"
-              >
-                2016
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2017"
-              >
-                2017
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2018"
-              >
-                2018
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2019"
-              >
-                2019
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=false&launch_year=2020"
-              >
-                2020
-              </a>
-            </div>
-          </div>
-          <div
-            class="left-panel-item"
-          >
-            <div
-              class="title-divider"
-            >
-              <p
-                class=""
-              >
-                 Successful Launch
-              </p>
-            </div>
-            <div
-              class="button-container"
-            >
-              <a
-                class="button active"
-                href="/filter?&launch_success=true&land_success=false&launch_year=2004"
-              >
-                true
-              </a>
-              <a
-                class="button "
-                href="/filter?&launch_success=false&land_success=false&launch_year=2004"
-              >
-                false
-              </a>
-            </div>
-          </div>
-          <div
-            class="left-panel-item"
-          >
-            <div
-              class="title-divider"
-            >
-              <p
-                class=""
-              >
-                 Successful Landing
-              </p>
-            </div>
-            <div
-              class="button-container"
-            >
-              <a
-                class="button "
-                href="/filter?&launch_success=true&land_success=true&launch_year=2004"
-              >
-                true
-              </a>
-              <a
-                class="button active"
-                href="/filter?&launch_success=true&land_success=false&launch_year=2004"
-              >
-                false
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex"
-        >
-          <div
-            class="card-list"
-          />
-        </div>
-      </div>
-    </main>
+    <main />
     <footer>
       <div
         class="footer"
