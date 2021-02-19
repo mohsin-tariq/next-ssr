@@ -3,5 +3,13 @@
 }
 
 .heading1 {
-  margin-top: 0;
+  cursor: pointer;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.heading1:hover{
+  color:slateblue
 }

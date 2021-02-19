@@ -11,6 +11,7 @@
 @import "../components/templates/LeftPanel/style.css";
 @import "../components/templates/CardList/style.css";
 @import "../components/templates/Footer/style.css";
+@import "../components/templates/Fallback/style.css";
 
 body {
   background-color: lightgrey;

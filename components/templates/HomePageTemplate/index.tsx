@@ -2,6 +2,7 @@ import LeftPanel from "../LeftPanel";
 import CardList from '../CardList';
 import { actionTypes, selectors } from '../../../features/filter'
 import { useSelector } from 'react-redux'
+import Header from "../Header";
 
 interface Props {
   data: any,
@@ -13,9 +14,7 @@ const HomePageTemplate = ({ data }: Props): JSX.Element => {
   const successLand = useSelector(selectors.getSuccessfulLand)
   return (
     <>
-      <h1 className="title">
-        SpaceX Launch Program
-      </h1>
+      <Header />
       <div className="container">
         <LeftPanel panelData={[
           {
