@@ -37,7 +37,7 @@ These are few libraries/plugins I used in this approach apart from NextJS.
 * Linting with [ESLint](https://eslint.org/)
 * Formatting with [Prettier](https://prettier.io/)
 * Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
-* Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
+* Testing with [Jest](https://jestjs.io/), added Jest configuration threshold and git pre-hooks and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
 
 
 
@@ -111,3 +111,7 @@ Below is the one generated from above command:
 
 ## Lighthouse Performance Report Screenshot
 ![image](https://user-images.githubusercontent.com/7425342/108430880-fa1f7500-7239-11eb-9479-3b5c05e86d92.png)
+
+
+## Unit Test Coverage HTML Report Snapshot
+![image](https://user-images.githubusercontent.com/7425342/108474727-ac315e00-7287-11eb-93de-8598d8eaeb05.png)
