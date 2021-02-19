@@ -7,7 +7,7 @@
     <br />
     <br />
     <span><b> Author: <a href="https://www.linkedin.com/in/mohsin-tariq--reactjs/">Mohsin Tariq</a> </b></span><br/>
-    <a href="https://nextjs-ssr-eight.vercel.app/"><b>View Demo</b></a>
+    <a href="https://react-ssr.vercel.app/"><b>View Demo</b></a>
    </p>
 </p>
 
