@@ -14,10 +14,14 @@
     "test:coverage": "jest --coverage",
     "test-all": "npm lint && npm type-check && npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohsin-tariq/next-ssr"
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run type-check"
+      "pre-commit": "npm run lint && npm test",
+      "pre-push": "jest && npm run type-check"
     }
   },
   "lint-staged": {

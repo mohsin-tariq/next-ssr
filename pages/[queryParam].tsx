@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import Head from 'next/head'
-import HomePageTemplate from '../components/templates/HomePageTemplate';
 import Footer from '../components/templates/Footer'
 import getQueryParam from '../features/filter/util'
 import LeftPanel from "../components/templates/LeftPanel"
@@ -28,33 +27,33 @@ export const FilteredResult = (): JSX.Element => {
         <title>SpaceX</title>
       </Head>
       <main>
-      <Header />
-      <div className="container">
-        <LeftPanel panelData={[
+        <Header />
+        <div className="container">
+          <LeftPanel panelData={[
+            {
+              heading: 'Launch Year',
+              buttonList: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+              queryParam: actionTypes.LAUNCH_YEAR,
+              selectedVal: launchYear
+            },
+            {
+              heading: 'Successful Launch',
+              buttonList: ['true', 'false'],
+              queryParam: actionTypes.SUCCESSFUL_LAUNCH,
+              selectedVal: successfulLaunch
+            },
+            {
+              heading: 'Successful Landing',
+              buttonList: ['true', 'false'],
+              queryParam: actionTypes.SUCCESSFUL_LAND,
+              selectedVal: successLand
+            }
+          ]} />
           {
-            heading: 'Launch Year',
-            buttonList: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
-            queryParam: actionTypes.LAUNCH_YEAR,
-            selectedVal: launchYear
-          },
-          {
-            heading: 'Successful Launch',
-            buttonList: ['true', 'false'],
-            queryParam: actionTypes.SUCCESSFUL_LAUNCH,
-            selectedVal: successfulLaunch
-          },
-          {
-            heading: 'Successful Landing',
-            buttonList: ['true', 'false'],
-            queryParam: actionTypes.SUCCESSFUL_LAND,
-            selectedVal: successLand
+            data ? <CardList cardList={data} /> : (error ? <Fallback isLoading={false} /> :  <Fallback isLoading={true}/>)
           }
-        ]} />
-        {
-          data ? <CardList cardList={data} /> : (error ? <Fallback isLoading={false} /> :  <Fallback isLoading={true}/>)
-        }
-        </div>
-</main>
+          </div>
+      </main>
 
       <footer>
         <Footer />
